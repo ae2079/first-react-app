@@ -1,20 +1,17 @@
 import './App.css';
+import Heading from "./components/Heading";
+import Footer from "./components/Footer";
 
-function Header(props) {
-    return ( <
-        h1 > Hello { props.name } < /h1> 
-    );
-}
 
 function App() {
-    const name = "Ali";
-    return ( <
-        div className = "App" >
-        this is the starting code
-        for my first componenet in react <
-        Header name = { name }
-        /> <
-        /div>
+    const name = "ALI";
+    return (
+        <div className = "App" >
+            <Heading name = { name } color = "red"/>
+            <Footer header = "HEADER" text = "this is the text from parent component">
+                And this is the text in the parent component
+            </Footer>
+        </div>
     );
 }
 
