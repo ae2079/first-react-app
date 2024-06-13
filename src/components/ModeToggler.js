@@ -12,7 +12,7 @@ function ModeToggler() {
     return (
         <div className="card">
             {darkModeOn ? darkMode : lightMode}
-            <button onClick={handleClick}>
+            <button className='button' onClick={handleClick}>
                 change mode
             </button>
         </div>

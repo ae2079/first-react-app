@@ -1,4 +1,7 @@
 import './App.css';
+import './components/Card.css';
+import './components/Botton.css';
+
 import Heading from "./components/Heading";
 import Footer from "./components/Footer";
 import Body from "./components/Body";
@@ -6,7 +9,6 @@ import ModeToggler from "./components/ModeToggler";
 import NumberGuessing from "./components/NumberGuessing";
 import {Input, TextInputWithFocusButton} from "./components/Input";
 import Shop from "./components/Shop";
-import "./components/Card.css";
 import Btn from "./components/Btn";
 
 function App() {

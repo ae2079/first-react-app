@@ -1,6 +1,34 @@
+/* Style for the card container */
 .card {
-    border: 5px solid #61dafb;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #375bec;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Style for the heading */
+.card h2 {
+    margin-bottom: 20px;
+    color: #b7baf6;
+}
+
+/* Style for the input field */
+.card input {
+    width: 50%;
     padding: 10px;
-    margin: 20px 20%;
-    border-radius: 30px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Focus state for the input field */
+.card input:focus {
+    border-color: #5bc0de; /* Light blue color */
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1), 0 0 5px rgba(91, 192, 222, 0.5);
+    outline: none;
 }

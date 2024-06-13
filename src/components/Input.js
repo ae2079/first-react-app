@@ -12,7 +12,7 @@ function Input() {
             <h2>input section</h2>
             <input value={inputText} onChange={handleChange} />
             <p>You typed: {inputText}</p>
-            <button onClick={() => setText('hello')}>
+            <button className='button' onClick={() => setText('hello')}>
                 Reset
             </button>
         </div>
@@ -29,7 +29,7 @@ function TextInputWithFocusButton() {
         <div className="card">
             <h2>Input with focus</h2>
             <input ref={inputEl} type="text" placeholder="Click the button to focus me"/>
-            <button onClick={onButtonClick}>Focus the input</button>
+            <button className='button' onClick={onButtonClick}>Focus the input</button>
         </div>
     );
 }

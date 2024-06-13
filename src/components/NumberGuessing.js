@@ -2,7 +2,7 @@ function NumberGuessing() {
     return (
         <div className="card">
             <h2> number guessing game</h2>
-            <button onClick={clickHandler}>
+            <button className='button' onClick={clickHandler}>
                 click for guess a number!
             </button>
             <p/>

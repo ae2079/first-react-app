@@ -13,7 +13,7 @@ function Btn(props) {
     }
     return (
         <div className="card">
-            <button onClick={clickHandler} onMouseOver={mouseOverHandler}>
+            <button className='button' onClick={clickHandler} onMouseOver={mouseOverHandler}>
                 {props.text}
             </button>
             <p>this button clicked {numberOfClicks} times</p>

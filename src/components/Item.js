@@ -16,8 +16,8 @@ function Item(props) {
     return (
         <div>
             <h3> {props.name} </h3>
-            <button onClick={handleDecrement}>buy</button>
-            <button onClick={handleCharge}>charge</button>
+            <button className='button' onClick={handleDecrement}>buy</button>
+            <button className='button' onClick={handleCharge}>charge</button>
             <p>Remained count {state.items[props.name] || 0}</p>
         </div>
     );
