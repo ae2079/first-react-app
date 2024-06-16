@@ -3,6 +3,7 @@ import ModeToggler from "./ModeToggler";
 import NumberGuessing from "./NumberGuessing";
 import {Input, TextInputWithFocusButton} from "./Input";
 import Shop from "./Shop";
+import Media from "./Media";
 import logoImage from "./../assets/images/logo.png";
 
 function Logo() {
@@ -34,6 +35,7 @@ function Homepage(props) {
             <Input/>
             <TextInputWithFocusButton/>
             <Shop/>
+            <Media/>
         </div>
     );
 }

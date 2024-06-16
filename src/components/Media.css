@@ -1,0 +1,9 @@
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* center align the images */
+}
+
+.image-container img {
+    margin-bottom: 10px; /* add some space between the images */
+}
