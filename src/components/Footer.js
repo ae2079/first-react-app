@@ -2,8 +2,12 @@ function Footer(props) {
     console.log("Footer props:", props);
     const footerStyle = {
         background: props.color,
-        width: "calc(100% - 20px)",
-        marginLeft: "10px",
+        width: "100%",
+        marginTop: "0px",
+        marginBottom: "0",
+        boxShadow: "0 -2px 4px rgba(0, 0, 0, 0.1)",
+        bottom: "0",
+        padding: "10px 20px",
     };
     return (
         <div style={footerStyle} className="copyright">

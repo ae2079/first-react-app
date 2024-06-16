@@ -1,19 +1,16 @@
-function getRandomNumber() {
-    return Math.floor(Math.random() * 10) + 1;
-}
+import Nav from "./Nav";
 
 function Heading(props) {
     console.log("heading variables:", props);
     const headingStyle = {
         background: props.color,
-        width: "calc(100% - 20px)",
-        marginLeft: "10px",
+        width: "100%",
     };
     return (
-        <div style={headingStyle}>
+        <div style={headingStyle} className="heading">
             <h1> Hello { props.name } </h1>
-            <p>Here is a random number form 0 to 10 : {getRandomNumber()}</p>
             <p> The background color should be { props.color }</p>
+            <Nav/>
         </div>
     );
 }

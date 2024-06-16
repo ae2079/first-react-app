@@ -1,0 +1,41 @@
+/* Base styles for the main navigation */
+.main-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1; /* Take up available space */
+    margin-left: 20px; /* Adjust margin as needed */
+}
+
+/* Styles for the navigation links */
+.main-nav a {
+    color: white; /* White text color */
+    text-decoration: none; /* Remove underline from links */
+    margin: 0 15px; /* Space out the links */
+    padding: 5px 10px;
+    transition: color 0.3s, background-color 0.3s; /* Smooth transitions */
+}
+
+/* Hover effect for the navigation links */
+.main-nav a:hover {
+    color: #333; /* Dark text color on hover */
+    background-color: #b2d6e1; /* Light blue background on hover */
+    border-radius: 5px; /* Rounded corners for the hover effect */
+}
+
+/* Active state for the navigation links */
+.main-nav a.active {
+    font-weight: bold; /* Bold text for the active link */
+    color: #112125; /* Light blue text color */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    .main-nav {
+        flex-direction: column; /* Stack links vertically on small screens */
+        margin-left: 0; /* Remove left margin */
+    }
+    .main-nav a {
+        margin: 5px 0; /* Adjust spacing for vertical layout */
+    }
+}
