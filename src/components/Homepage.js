@@ -1,10 +1,11 @@
+import React, { useContext } from 'react';
 import Btn from "./Btn";
-import ModeToggler from "./ModeToggler";
 import NumberGuessing from "./NumberGuessing";
 import {Input, TextInputWithFocusButton} from "./Input";
 import Shop from "./Shop";
 import Media from "./Media";
 import logoImage from "./../assets/images/logo.png";
+import { DarkModeContext } from './DarkModeContext';
 
 function Logo() {
     const logoStyle = {
@@ -18,9 +19,12 @@ function Logo() {
 
 function Homepage(props) {
     console.log("body variables:", props);
+    const { isDarkMode } = useContext(DarkModeContext);
+    const backgroundColor = isDarkMode ? "black" : "white";
+    const textColor = isDarkMode ? "white" : "black";
     const homepageStyle = {
-        background: props.color,
-        color: "white",
+        background: backgroundColor,
+        color: textColor,
         width: "100%",
         paddingTop: "180px",
         paddingBottom: "20px",
@@ -30,7 +34,6 @@ function Homepage(props) {
             <Logo />
             <p>the background color should be {props.color}</p>
             <Btn text="click on botton"/>
-            <ModeToggler/>
             <NumberGuessing/>
             <Input/>
             <TextInputWithFocusButton/>

@@ -1,4 +1,5 @@
 import Nav from "./Nav";
+import ModeToggler from "./ModeToggler";
 
 function Heading(props) {
     console.log("heading variables:", props);
@@ -8,8 +9,8 @@ function Heading(props) {
     };
     return (
         <div style={headingStyle} className="heading">
-            <h1> Hello { props.name } </h1>
-            <p> The background color should be { props.color }</p>
+            <ModeToggler/>
+            <h1> Welcome To My Site </h1>
             <Nav/>
         </div>
     );

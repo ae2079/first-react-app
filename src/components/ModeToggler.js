@@ -1,22 +1,18 @@
-import {useState} from "react";
+import React, { useContext } from 'react';
+import { DarkModeContext } from './DarkModeContext';
 
-function ModeToggler() {
-    const [ darkModeOn, setDarkModeOn] = useState(true);
-    const darkMode = <h1>Dark Mode is On</h1>;
-    const lightMode = <h1>Light Mode is On</h1>;
+const ModeToggler = () => {
+    const { isDarkMode, toggleDarkMode } = useContext(DarkModeContext);
 
-    function handleClick() {
-        setDarkModeOn(!darkModeOn);
-        console.log("mode changed!");
-    }
+    const modeTogglerStyle = {
+        marginRight: "80%",
+    };
+
     return (
-        <div className="card">
-            {darkModeOn ? darkMode : lightMode}
-            <button className='button' onClick={handleClick}>
-                change mode
-            </button>
-        </div>
+        <button onClick={toggleDarkMode} className="button" style={modeTogglerStyle}>
+            {isDarkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
+        </button>
     );
-}
+};
 
 export default ModeToggler;

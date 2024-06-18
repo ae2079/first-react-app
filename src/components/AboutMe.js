@@ -1,10 +1,16 @@
-function AboutMe(props) {
+import {useContext} from "react";
+import {DarkModeContext} from "./DarkModeContext";
+
+function AboutMe() {
+    const { isDarkMode } = useContext(DarkModeContext);
+    const backgroundColor = isDarkMode ? "black" : "white";
+    const textColor = isDarkMode ? "white" : "black";
     const aboutMeStyle = {
-        background: props.color,
-        color: "white",
+        background: backgroundColor,
+        color: textColor,
         width: "100%",
         paddingTop: "180px",
-        paddingBottom: "20px",
+        paddingBottom: "1000px",
     };
     return (
       <div style={aboutMeStyle}>
